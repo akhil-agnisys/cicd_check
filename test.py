@@ -4,7 +4,10 @@ import os
 
 # Function to run a subprocess command and return the result
 def run_command(command):
-    result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    result = subprocess.run(command, shell=True,
+                            stdout=subprocess.PIPE, 
+                            
+                    stderr=subprocess.PIPE)
     return result
 
 # Run black in check mode
